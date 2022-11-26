@@ -2,10 +2,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
   <link rel="stylesheet" href="/global-processed.css" />
   {% if extraStyle %} {% for styleLink in extraStyle %}
   <link rel="stylesheet" href="{{ styleLink }}" />
   {% endfor %} {% endif %}
+  
+  <!-- Netlify Identity Widget -->
+  {% if page.url == "/" %}
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {% endif %}
+
   <meta
     name="description"
     content="
@@ -35,9 +42,16 @@
     <small>&copy; {{ site.copyrightYear }}. Text by <a href="https://www.tobyord.com">Toby Ord</a> and <a href="https://www.finmoorhouse.com">Fin Moorhouse</a>.</small>
   </main>
 
-    <!-- Netlify Identity Widget -->
-    {% if path == "home" %}
-    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    {% endif %}
-    
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
 </body>
