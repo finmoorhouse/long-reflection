@@ -24,6 +24,8 @@ collections:
       - label: "Introduction"
         name: "introduction"
         file: "src/index.md"
+        editor:
+          preview: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "string" }
@@ -31,6 +33,8 @@ collections:
       - label: "FAQ"
         name: "faq"
         file: "src/pages/faq.md"
+        editor:
+          preview: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "string" }
@@ -38,10 +42,14 @@ collections:
       - label: "Further reading"
         name: "further-reading"
         file: "src/pages/further-reading.md"
+        editor:
+          preview: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+
+
   ## 
   # Visit https://www.netlifycms.org/docs/widgets/ to learn more about what widgets you can use.
   # Widgets are the data type that field will allow and how the CMS UI will be like for that field , like datetime, number, list of options, boolean, image, code, and more. 
