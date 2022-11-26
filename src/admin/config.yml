@@ -1,7 +1,7 @@
 backend:
   # Settings to use Netlify Identity as backend
   name: git-gateway
-  branch: main
+  branch: master
 
 # Add the route to your images, so Netlify CMS knows where to save uploads to.
 media_folder: "src/static/img"
@@ -29,6 +29,34 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
+
+# Pages Collection
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Introduction"
+        name: "introduction"
+        file: "src/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "FAQ"
+        name: "faq"
+        file: "src/pages/faq.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Further reading"
+        name: "further-reading"
+        file: "src/pages/further-reading.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+  ## 
   # Visit https://www.netlifycms.org/docs/widgets/ to learn more about what widgets you can use.
   # Widgets are the data type that field will allow and how the CMS UI will be like for that field , like datetime, number, list of options, boolean, image, code, and more. 
 
