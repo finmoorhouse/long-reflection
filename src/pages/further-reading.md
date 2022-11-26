@@ -94,6 +94,5 @@ It might be that one of the conclusions we come to takes moral uncertainty into 
 * [Reflecting on the Long Reflection](https://www.felixstocker.com/blog/reflecting-on-the-long-reflection) — Felix Stocker
 * [AI Alignment Podcast: Moral Uncertainty and the Path to AI Alignment with William MacAskill](https://futureoflife.org/podcast/moral-uncertainty-and-the-path-to-ai-alignment-with-william-macaskill/) — Future of Life Podcast
 * [Cause prioritization for downside-focused value systems](https://longtermrisk.org/cause-prioritization-downside-focused-value-systems/#Moral_uncertainty_and_cooperation) — Lukas Gloor
-* [Quotes about the long reflection](https://forum.effectivealtruism.org/posts/H2zno3ggRJaph9P6c/quotes-about-the-long-reflection) — Michael Aird
-
-[‘Long Reflection’ tag](https://forum.effectivealtruism.org/topics/long-reflection) on the [Effective Altruism Forum](https://forum.effectivealtruism.org/)
+* [Quotes about the long reflection](https://forum.effectivealtruism.org/posts/H2zno3ggRJaph9P6c/quotes-about-the-long-reflection) — Michael Aird[](https://forum.effectivealtruism.org/topics/long-reflection)
+* [‘Long Reflection’ tag](https://forum.effectivealtruism.org/topics/long-reflection) on the [Effective Altruism Forum](https://forum.effectivealtruism.org/)
