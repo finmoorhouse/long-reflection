@@ -18,10 +18,10 @@
   />
   <title>{{ title }}</title>
 </head>
-<body>
-  <main class="prose font-serif">
+<body class="margin-auto">
+  <main class="prose font-serif margin-auto">
     <h1 class='text-center'><a href='/' class='no-underline'>The Long Reflection</a></h1>
-    <nav class='max-w-sm m-auto'>
+    <nav class='max-w-xs m-auto'>
       <ul class="flex list-none p-0 font-sans">
         <li class="flex-1 mr-2 text-center p-0"><a class='no-underline hover:underline' href="/" {% if page.url == '/' %} aria-current="page"{% endif %}>Intro</a></li>
         <li class="flex-1 mr-2 text-center p-0"><a class='no-underline hover:underline' href="/faq" {% if page.url == '/faq' %} aria-current="page"{% endif %}>FAQ</a></li>
@@ -34,4 +34,10 @@
     <br />
     <small>&copy; {{ site.copyrightYear }}. Text by <a href="https://www.tobyord.com">Toby Ord</a> and <a href="https://www.finmoorhouse.com">Fin Moorhouse</a>.</small>
   </main>
+
+    <!-- Netlify Identity Widget -->
+    {% if path == "home" %}
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
+    
 </body>

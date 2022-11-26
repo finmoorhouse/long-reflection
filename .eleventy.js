@@ -1,9 +1,6 @@
 const pluginTOC = require("eleventy-plugin-toc");
 
-
-
 module.exports = function (config) {
-  
   let markdownIt = require("markdown-it");
   let markdownItKatex = require("@iktakahiro/markdown-it-katex");
   let markdownItFootnote = require("markdown-it-footnote");
@@ -21,7 +18,7 @@ module.exports = function (config) {
     level: 2, // minimum level header -- anchors will only be applied to h2 level headers and below but not h1
     permalink: markdownItAnchor.permalink.headerLink({
       safariReaderFix: false,
-      class: "header-anchor"
+      class: "header-anchor",
     }),
   };
 
@@ -36,6 +33,7 @@ module.exports = function (config) {
   config.addPlugin(pluginTOC);
 
   config.addPassthroughCopy("src/style/*.css");
+  config.addPassthroughCopy("./src/admin");
 
   return {
     dir: {
